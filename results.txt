@@ -1,16 +1,25 @@
 ===== THỐNG KÊ =====
 Số chữ: 115
-Số từ: 115
+Số từ: 16
 Số câu: 6
 
 ===== EMAIL =====
-None
+abc@gmail.com
 
 ===== URL =====
-None
+https://openai.com
 
 ===== PHONE =====
-None
+0901234567
 
 ===== TOP WORDS ===== 
-None
+Xin: 1
+chào: 1
+mọi: 1
+người.: 1
+Liên: 1
+hệ:: 1
+abc@gmail.com: 1
+Website:: 1
+https://openai.com: 1
+Số: 1

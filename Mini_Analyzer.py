@@ -16,26 +16,20 @@ def clean_text(text):
 def count_characters(text):
     return len(text)
 def count_words(text):
-    words = text.strip()
+    words = text.split()
     return(len(words))
 def count_sentences(text):
     sentences = re.findall(r"[.?!]", text)
     return len(sentences)
 def extract_email(text):
     email = re.findall(r"[A-Za-z0-9-+%_.]+@[A-Za-z0-9-.]+\.[A-Za-z]{2,}", text)
-    for e in email:
-        print(e+"\n")
-    return
+    return "\n".join(email)
 def extract_phones(text):
     phone = re.findall(r"\d{10}", text)
-    for p in phone:
-        print(p+"\n")
-    return
+    return "\n".join(phone)
 def extract_url(text):
     url = re.findall(r"https?://\S+", text)
-    for u in url:
-        print(u +"\n")
-    return
+    return "\n".join(url)
 def top_words(text): #một từ xuất hiện mấy lần
     counter = {}
     words = text.split()
@@ -50,10 +44,11 @@ def top_words(text): #một từ xuất hiện mấy lần
         #lambda này đang làm việc lấy phần tử thứ hai trong mỗi x, hay là counter.items()
         reverse = True
     )
+    output = []
     for i in range(10):
         the_word, count = sorted_words[i]
-        print(f"{the_word}: {count}")
-    return
+        output.append(f"{the_word}: {count}")
+    return "\n".join(output)
 def main(text):
     output = f'''===== THỐNG KÊ =====
 Số chữ: {count_characters(text)}

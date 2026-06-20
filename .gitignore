@@ -1,0 +1,7 @@
+.vscode/
+**pycache**/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+.log
